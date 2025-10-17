@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yum Drop - Admin Panel</title>
+  <style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #c4daf2; 
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: #1a1a4b; 
+      color: #fff;
+      padding: 15px; 
+      display: flex;
+      align-items: center; 
+      justify-content: space-between; 
+    }
+
+    header .logo img {
+      width: 150px;
+    }
+
+
+
+    .main {
+	margin-top:70px;
+      background-color: #c4daf2;
+      color: navy;
+      padding: 50px 20px; 
+      text-align: center;
+    }
+
+    .main h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .main p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons .button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 0 10px;
+      font-size: 1.2em;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+	.button_out {
+  padding: 8px 18px;
+  background-color: red; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button_out a {
+  color: #fff; 
+}
+    .buttons .button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: lightpink; 
+      color: navy; 
+      padding: 20px 0;
+      width: 100%; 
+      position: absolute; 
+      bottom: 0; 
+      left: 0; 
+      text-align: center;
+    }
+
+    footer h2 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="Homepage_for_admin_logOUT.html"><img src="Logo.png" alt="Yum Drop Logo" width="150"></a>
+  </div>
+  <h1>Admin Panel</h1>
+  <div class="button_out">
+    <a href="logout.php">Log out</a>
+  </div>
+</header>
+
+<section class="main">
+  <div class="container">
+    <h1>Welcome to Yum Drop Admin Panel</h1>
+    <p>Manage users, restaurants, and drivers efficiently.</p>
+   <div class="buttons">
+  <a href="managefood.php" class="button">Manage Food</a>
+  <a href="Admin_mange_drivers.php" class="button">Manage Drivers</a>
+  <a href="vieworders.php" class="button">View Orders</a> 
+  <a href="viewusers.php" class="button">View Users</a> 
+</div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <h2>&copy; 2024 Yum Drop. All rights reserved.</h2>
+  </div>
+</footer>
+
+</body>
+</html>
